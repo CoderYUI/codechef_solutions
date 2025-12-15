@@ -1,0 +1,33 @@
+# Problem
+
+**Problem URL:** [https://www.codechef.com/practice/course/basic-programming-concepts/DIFF500/problems/DOMINANT](https://www.codechef.com/practice/course/basic-programming-concepts/DIFF500/problems/DOMINANT)
+
+## Solution
+
+```java
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		// your code goes here
+		Scanner input = new Scanner(System.in);
+		int t = input.nextInt();
+		
+		while(t-- > 0){
+		    int x = input.nextInt();
+		    int y = input.nextInt();
+		    int z = input.nextInt();
+		    
+		    if (x>y+z) System.out.println("YES");
+		    else if (y>x+z) System.out.println("YES");
+		    else if (z>x+y) System.out.println("YES");
+		    else System.out.println("NO");
+		}
+
+	}
+}
+```
